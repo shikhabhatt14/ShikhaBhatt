@@ -85,6 +85,24 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
+   * download button
+   */
+  let download = document.querySelector('.download');
+
+  function toggleDownload() {
+    if (download) {
+      window.scrollY > 100 ? download.classList.add('active') : download.classList.remove('active');
+      window.scrollTo({
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  window.addEventListener('load', toggleDownload);
+  document.addEventListener('scroll', toggleDownload);
+
+
+  /**
    * Animation on scroll function and init
    */
   function aosInit() {
