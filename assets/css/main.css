@@ -1213,6 +1213,12 @@ section,
   background-color: var(--accent-color);
 }
 
+div .testimonial-item {
+  margin-bottom: 40px
+}
+
+
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
